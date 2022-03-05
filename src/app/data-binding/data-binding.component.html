@@ -1,0 +1,44 @@
+<p>data-binding works!</p>
+<h1>Interpolation</h1>
+{{firstNumber}}
+<br>
+{{firstNumber+7*8}}
+<br>
+{{firstName}}
+<br>
+{{"Hello "+firstName}}
+<br>
+{{firstName.length}}
+<br>
+{{firstName.toUpperCase()}}
+<br>
+
+<!-- {{a=4+5}} -->
+<!-- {{window.location.href}} -->
+{{href}}
+<br>
+<h1>Property binding</h1>
+
+<!-- <input type="text" id="firstId"/> -->
+<!-- <input type="text" [id]="txtId"/> -->
+<input type="text" id="{{txtId}}"/>
+
+<button [disabled]="isDisabled">Hello World</button>
+<button disabled="{{isDisabled}}">Hello Again</button>
+<br>
+<h1>Class binding</h1>
+
+<h3 class="text-success">Welcome to ITI</h3>
+<h3 [class]="textColor">Welcome to ITI again</h3>
+<h3 [class.text-danger]="hasError">Welcome to ITI again</h3>
+<h3 [ngClass]="messageClasses">Welcome to Angular course</h3>
+
+<br>
+<h1>Style Binding</h1>
+
+<h3 style="color:red;"> Tipo car</h3>
+<h3 [style.color]="'red'">Welcome to Angular</h3>
+
+<h3 [style.color]="hasError ? 'red' : 'green' " >Check has error</h3>
+
+<h3 [ngStyle]="myStyle">Condiational multiple style</h3>
