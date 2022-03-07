@@ -10,6 +10,13 @@ import { RightComponent } from './right/right.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwWayBindingComponent } from './tw-way-binding/tw-way-binding.component';
+import { FormsModule } from '@angular/forms';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SquarePipe } from './square.pipe';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +27,18 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     RightComponent,
     FooterComponent,
     DataBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwWayBindingComponent,
+    StructuralDirectivesComponent,
+    PipesComponent,
+    SquarePipe,
+    ChildComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   exports:[],
   providers: [],

@@ -1,0 +1,41 @@
+<p>structural-directives works!</p>
+
+<h1>ngIf directive</h1>
+
+<h2 *ngIf="false">
+    Hello world
+</h2>
+
+<h2 *ngIf="displayH2">
+    Hello world
+</h2>
+
+<div *ngIf="isLoggedIn; then thenBlock ;else elseBlock ">
+
+</div>
+
+<ng-template #elseBlock>
+    <h2>
+        Welecome Guest
+    </h2>
+</ng-template>
+
+
+<ng-template  #thenBlock>
+    <h2>
+        Welcome {{fullName}}
+    </h2>
+</ng-template>
+
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You selected red color</div>
+    <div *ngSwitchCase="'blue'">You selected blue color</div>
+    <div *ngSwitchCase="'green'">You selected green color</div>
+    <div *ngSwitchDefault>Pick a color again</div>
+</div>
+
+
+<div *ngFor="let item of persons; index as i; odd as o; even as e ; first as f ; last as l">
+    {{item.name}} - {{item.age}} -{{i}} -{{o}} -{{e}} -{{f}} -{{l}}
+</div>
