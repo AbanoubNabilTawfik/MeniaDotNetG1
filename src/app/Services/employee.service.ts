@@ -9,7 +9,7 @@ import { IEmployee } from '../IEmployee';
 export class EmployeeService {
 
   constructor(private http:HttpClient) { }
-   _url:string="/assets/Data/employes.json";
+   _url:string="/assets/Data/employees.json";
   getEmployees():Observable<IEmployee[]>
   {
     return  this.http.get<IEmployee[]>(this._url).pipe(catchError((err)=>{

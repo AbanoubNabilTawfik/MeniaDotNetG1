@@ -20,6 +20,11 @@ import { ParentComponent } from './parent/parent.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import {HttpClientModule} from '@angular/common/http';
+import { DepartmentsComponent } from './departments/departments.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DepartmentDetailsComponent } from './department-details/department-details.component';
+import { ContactComponent } from './contact/contact.component';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import {HttpClientModule} from '@angular/common/http';
     ChildComponent,
     ParentComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    DepartmentsComponent,
+    PageNotFoundComponent,
+    DepartmentDetailsComponent,
+    ContactComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,

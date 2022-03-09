@@ -1,0 +1,17 @@
+<p>department-details works!</p>
+
+you select department with id = {{deptId}}
+
+<p>
+    <a (click)="goNext()" >Next</a>
+    <a (click)="goPrev()">Prev</a>
+</p>
+
+<div>
+    <button (click)="goToDepartment()">Back</button>
+</div>
+
+<button (click)="goToContact()">Go to contact</button>
+<button (click)="goToOverview()">Go to overview</button>
+
+<router-outlet></router-outlet>
