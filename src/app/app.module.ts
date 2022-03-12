@@ -25,6 +25,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DepartmentDetailsComponent } from './department-details/department-details.component';
 import { ContactComponent } from './contact/contact.component';
 import { OverviewComponent } from './overview/overview.component';
+import { TdfComponent } from './tdf/tdf.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { OverviewComponent } from './overview/overview.component';
     PageNotFoundComponent,
     DepartmentDetailsComponent,
     ContactComponent,
-    OverviewComponent
+    OverviewComponent,
+    TdfComponent
   ],
   imports: [
     BrowserModule,
